@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Kyte Surf Pro 202",
+    "description": "Una cometa de alta calidad para surfistas profesionales",
+    "image": "product1.jpg",
+    "category": "Kites",
+    "colors": [
+      "azul",
+      "negro"
+    ],
+    "price": 2000,
+    "stock": "1"
+  },
+  {
+    "id": 2,
+    "name": "Tabla Kyte Master",
+    "description": "Tabla versátil y resistente para todos los niveles.",
+    "image": "product2.jpg",
+    "category": "tablas",
+    "colors": [
+      "rojo",
+      "blanco"
+    ],
+    "price": 650
+  },
+  {
+    "id": 3,
+    "name": "Arnés Kyte Comfortable",
+    "description": "Arnés ergonómico para sesiones prolongadas de kitesurf.",
+    "image": "product3.jpg",
+    "category": "Kites",
+    "colors": [
+      "negro",
+      "gris"
+    ],
+    "price": 300,
+    "stock": "10"
+  },
+  {
+    "id": 4,
+    "name": "Neopreno Kyte Wave",
+    "description": "Neopreno de alta flexibilidad y protección térmica.",
+    "image": "product4.png",
+    "category": "neoprenos",
+    "colors": [
+      "verde",
+      "azul"
+    ],
+    "price": 200
+  },
+  {
+    "id": 5,
+    "name": "Líneas Kyte Ultra",
+    "description": "Líneas ultra resistentes para condiciones extremas.",
+    "category": "lines",
+    "image": "product5.png",
+    "colors": [
+      "azul",
+      "verde"
+    ],
+    "price": 300
+  }
+]

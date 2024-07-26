@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Admin</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'Edit Admin' }) %>
+    <div class="container">
+        <h1>Edit Admin</h1>
+        <form action="/admin/edit/<%= admin.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="<%= admin.username %>" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="<%= admin.email %>" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password if changing (leave empty to keep current)">
+            </div>
+            <button type="submit" class="button">Save</button>
+        </form>
+        <a href="/admin/list" class="button">Cancel</a>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>

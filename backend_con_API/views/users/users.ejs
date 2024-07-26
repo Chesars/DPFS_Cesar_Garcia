@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'User Management' }) %>
+    <div class="container">
+        <a href="/" class="button back-button">Back to Store Management</a>
+        <h1>User Management</h1>
+        <div class="user-management">
+            <div class="management-option">
+                <h2 class="management-title">View User List or Edit Users</h2>
+                <p>View the list of all users available in the database.</p>
+                <a href="/users/list" class="button button-list">View User List</a>
+            </div>
+            <div class="management-option">
+                <h2 class="management-title">Create a New User</h2>
+                <p>Use the following link to add a new user to the database.</p>
+                <a href="/users/create" class="button button-create">Create User</a>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>

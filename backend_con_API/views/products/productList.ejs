@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products List</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'Products List' }) %>
+    <div class="container">
+        <a href="/products" class="button back-button">Back to Product Management</a>
+        <h1>Products List</h1>
+        <ul class="product-list">
+            <% products.forEach(product => { %>
+                <li class="product-item">
+                    <img src="/images/products/product<%= product.id %>.jpg" alt="<%= product.name %>">
+                    <div class="product-info">
+                        <strong><%= product.name %></strong>
+                        <span>$<%= product.price %></span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="/products/edit/<%= product.id %>" class="button edit-button">Edit</a>
+                        <form action="/products/delete/<%= product.id %>" method="POST" style="display:inline;">
+                        <!-- <form action="/products/<%= product.id %>?_method=DELETE" method="POST" class="delete-form"> -->
+                            <button type="submit" class="button button-delete">Delete</button>
+                        </form>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>

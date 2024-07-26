@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'Users List' }) %>
+    <div class="container">
+        <a href="/users" class="button back-button">Back to User Management</a>
+        <h1>Users List</h1>
+        <ul class="users-list">
+            <% users.forEach(user => { %>
+                <li class="user-item">
+                    <img src="/images/users/<%= user.image ? user.image : 'userDefaultImage.png' %>" alt="<%= user.firstName %> <%= user.lastName %>">
+                    <div class="user-info">
+                        <strong><%= user.firstName %> <%= user.lastName %></strong>
+                        <span><%= user.email %></span>
+                        <span><%= user.role %></span>
+                    </div>
+                    <div class="user-actions">
+                        <a href="/users/edit/<%= user.id %>" class="button edit-button">Edit</a>
+                        <form action="/users/delete/<%= user.id %>" method="POST" style="display:inline;">
+                            <button type="submit" class="button button-delete">Delete</button>
+                        </form>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>

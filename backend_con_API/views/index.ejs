@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="container">
+        <div class="brand">
+            <img src="/images/hero.jpeg" alt="Brand Logo">
+        </div>
+        <h1>Welcome to Store Admin Panel</h1>
+        <div class="management-section">
+            <h2>Product Section</h2>
+            <p>Manage the products available in our store.</p>
+            <a href="/products" class="button">Go to Products</a>
+        </div>
+        <div class="management-section">
+            <h2>Admin Management Section</h2>
+            <p>Manage the users of the system.</p>
+            <a href="/admin" class="button">Go to Users Management</a>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

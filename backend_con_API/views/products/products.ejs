@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'Product Management' }) %>
+    <div class="container">
+        <a href="/" class="button back-button">Back to Store Management</a>
+        <h1>Product Management</h1>
+        <div class="product-management">
+            <div class="management-option">
+                <h2 class="management-title">View Product List or Edit Products</h2>
+                <p>View the list of all products available in the database.</p>
+                <a href="/products/list" class="button button-list">View Product List</a>
+            </div>
+            <div class="management-option">
+                <h2 class="management-title">Create a New Product</h2>
+                <p>Use the following link to add a new product to the database.</p>
+                <a href="/products/Create" class="button button-create">Create Product</a>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>

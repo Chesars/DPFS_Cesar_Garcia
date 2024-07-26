@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "firstName": "Juancho",
+    "lastName": "Pérez",
+    "email": "juan.perez@example.com",
+    "password": "$2a$10$nIFRdFwq72bUrGIRI64gJuy7eq/DNBV5QOk/A7HjHdK6CzuK8oGFa",
+    "category": "admin",
+    "image": "juan_perez.jpg",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "firstName": "María",
+    "lastName": "López",
+    "email": "maria.lopez@example.com",
+    "password": "$2a$10$eYQJbvvcyC6E928ln5RxauIRwiYNUsT8SMP2Td216RWkh.Z0m4FeW",
+    "category": "user",
+    "image": "maria_lopez.jpg"
+  },
+  {
+    "id": 3,
+    "firstName": "Carlos",
+    "lastName": "González",
+    "email": "carlos.gonzalez@example.com",
+    "password": "$2a$10$..L0L1RSjv/XVH0pu2OgHej/qZDC2DgbJLEq4w.2bA/Y5pc92ZPmC",
+    "category": "user",
+    "image": "carlos_gonzalez.jpg"
+  },
+  {
+    "id": 4,
+    "firstName": "Ana",
+    "lastName": "Martínez",
+    "email": "ana.martinez@example.com",
+    "password": "$2a$10$PN1V7hKYkgxM9Bqc6kjA4uK.B97b/wBujuIPMPcxmjIoE1DjnMfs2",
+    "category": "admin",
+    "image": "ana_martinez.jpg"
+  },
+  {
+    "id": 5,
+    "firstName": "Luis",
+    "lastName": "Ramírez",
+    "email": "luis.ramirez@example.com",
+    "password": "$2a$10$IfwunQkrFck5hjcCbj8xI.wQoXWn6DTCbTdQfJvmURSDFXyi08YEm",
+    "category": "user",
+    "image": "luis_ramirez.jpg"
+  },
+  {
+    "id": 6,
+    "firstName": "Usuario",
+    "lastName": "Nu",
+    "email": "newuser@gmail.com",
+    "password": "$2b$10$DSMDkeaMhusSU91qOaHbq.ckzW6uTmRTMlfByIYxkz0JezIgVe3K6",
+    "role": "admin"
+  }
+]

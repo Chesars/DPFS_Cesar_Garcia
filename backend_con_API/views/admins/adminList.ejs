@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin List</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <%- include('../partials/header', { title: 'Admin List' }) %>
+    <div class="container">
+        <h1>Admin List</h1>
+        <a href="/admin/create" class="button button-create">Add New Admin</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% admins.forEach(admin => { %>
+                    <tr>
+                        <td><%= admin.username %></td>
+                        <td><%= admin.email %></td>
+                        <td>
+                            <a href="/admin/edit/<%= admin.id %>" class="button">Edit</a>
+                            <form action="/admin/delete/<%= admin.id %>" method="post" style="display:inline;">
+                                <button type="submit" class="button button-delete">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+            <a href="/admin" class="button button-create">Cancel</a>
+        </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>
