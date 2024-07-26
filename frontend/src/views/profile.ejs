@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="profile-body">
+    <%- include('partials/header') %>
+
+    <div class="profile-container">
+        <h1>Your Profile</h1>
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="<%= user.profilePicture %>" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h2><%= user.username %></h2>
+                <p><strong>Email:</strong> <%= user.email %></p>
+                <p><strong>Joined:</strong> <%= user.joinDate %></p>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <a href="/shoppingcart" class="btn">Go to Cart</a>
+            <a href="/logout" class="btn">Logout</a>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+    <script src="/js/script.js"></script>
+</body>
+</html>

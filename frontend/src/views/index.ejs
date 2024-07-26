@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Header</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="hero-section">
+        <a href="/products" class="hero-item" style="background-image: url('/images/hero1.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Kyte</h2>
+                <p>Description 1</p>
+            </div>
+            <div class="hero-bottom-shadow"></div>
+        </a>
+        <a href="/products" class="hero-item" style="background-image: url('/images/hero2.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Wing</h2>
+                <p>Description 2</p>
+            </div>
+            <div class="hero-bottom-shadow"></div>
+        </a>
+        <a href="/products" class="hero-item" style="background-image: url('/images/hero3.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Foil</h2>
+                <p>Description 3</p>
+            </div>
+            <div class="hero-bottom-shadow"></div>
+        </a>
+    </div>
+
+    <!-- Products Section -->
+
+    <div style="background-image: url('/images/background.png');" class="products-section">
+        <h2>Our Products</h2>
+        <div id="products-grid" class="products-grid">
+            <% products.forEach(product => { %>
+                <a href="/products/<%= product.id %>" class="product-item" style="background-image: url('/images/product<%= product.id %>.jpg');">
+                    <div class="product-overlay"></div>
+                    <div class="product-content">
+                        <h3><%= product.name %></h3>
+                        <p><%= product.Category ? product.Category.name : 'CATEGORY' %></p>
+                        <p>Price: $<%= product.price %></p>
+                        <button class="add-to-cart">Product Details</button>
+                    </div>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+        <video autoplay muted loop id="myVideo">
+            <source src="/videos/videoPage.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay">
+            <!-- <div class="video-content">
+                <h2>KYTE WING OR FOIL</h2>
+                <p>Let's get started...</p>
+            </div> -->
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

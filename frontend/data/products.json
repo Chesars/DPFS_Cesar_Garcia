@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Product Title 1",
+        "description": "Description of Product 1",
+        "image": "/images/product1.jpg",
+        "price": "99.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 2,
+        "title": "Product Title 2",
+        "description": "Description of Product 2",
+        "image": "/images/product2.jpg",
+        "price": "199.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 3,
+        "title": "Product Title 3",
+        "description": "Description of Product 3",
+        "image": "/images/product3.jpg",
+        "price": "299.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 4,
+        "title": "Product Title 4",
+        "description": "Description of Product 4",
+        "image": "/images/product4.jpg",
+        "price": "399.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 5,
+        "title": "Product Title 5",
+        "description": "Description of Product 5",
+        "image": "/images/product5.jpg",
+        "price": "499.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 6,
+        "title": "Product Title 6",
+        "description": "Description of Product 6",
+        "image": "/images/product6.jpg",
+        "price": "599.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 7,
+        "title": "Product Title 7",
+        "description": "Description of Product 7",
+        "image": "/images/product7.jpg",
+        "price": "699.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 8,
+        "title": "Product Title 8",
+        "description": "Description of Product 8",
+        "image": "/images/product8.jpg",
+        "price": "799.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 9,
+        "title": "Product Title 9",
+        "description": "Description of Product 9",
+        "image": "/images/product9.jpg",
+        "price": "899.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    },
+    {
+        "id": 10,
+        "title": "Product Title 10",
+        "description": "Description of Product 10",
+        "image": "/images/product10.jpg",
+        "price": "999.99",
+        "colors": ["Red", "Blue", "Green"],
+        "sizes": ["3m", "4m", "5m", "8m", "10m", "12m", "14m"]
+    }
+]

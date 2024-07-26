@@ -1,0 +1,47 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+    width: 200px;
+    background-color: #0c163f;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sitelogo{
+    color: white
+    ;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}

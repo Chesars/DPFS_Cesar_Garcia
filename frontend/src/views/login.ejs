@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="hero" style="background-image: url('/images/background.png');">
+        <div class="login-container">
+            <h2>Log In to Your Account</h2>
+            <% if (typeof error !== 'undefined') { %>
+                <p class="error"><%= error %></p>
+            <% } %>
+            <% if (typeof errors !== 'undefined' && errors.length > 0) { %>
+                <ul class="error">
+                    <% errors.forEach(function(error) { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            <% } %>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input placeholder="you@example.com" type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input placeholder="******" type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Get Started</button>
+                <div class="links">
+                    <a href="/register">Create Account</a>
+                    <a href="/forgot-password">Forgot Password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+    <script src="/js/script.js"></script>
+</body>
+</html>

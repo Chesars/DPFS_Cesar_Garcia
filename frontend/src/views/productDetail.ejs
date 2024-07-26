@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %> - Product Detail</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="product-detail">
+        <!-- Product Carousel -->
+        <div class="product-carousel">
+            <div class="carousel-main-image" style="background-image: url('/images/product<%= product.id %>.jpg');"></div>
+            <div class="carousel-thumbnails">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 1">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 2">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 3">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+        <!-- Product Info -->
+        <div class="product-info">
+            <div class="product-category"><%= product.Category ? product.Category.name : 'CATEGORY' %> / SUBCATEGORY</div>
+            <h1 class="product-title"><%= product.name %></h1>
+            <p class="product-differential"><%= product.differential %></p>
+            <div class="product-options">
+                <div class="product-size">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <% if (product.Size) { %>
+                            <option value="<%= product.Size.id %>"><%= product.Size.name %></option>
+                        <% } else { %>
+                            <option value="0">No size available</option>
+                        <% } %>
+                    </select>
+                </div>
+                <div class="product-color">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <% if (product.Color) { %>
+                            <option value="<%= product.Color.id %>"><%= product.Color.name %></option>
+                        <% } else { %>
+                            <option value="0">No color available</option>
+                        <% } %>
+                    </select>
+                </div>
+            </div>
+            <div class="product-description">
+                <%= product.description %>
+            </div>
+            <div class="product-price">
+                <label>PRICE:</label>
+                <span>$<%= (product.price ? Number(product.price).toFixed(2) : '0.00') %></span>
+            </div>
+            <button class="btn-add-to-cart">ADD TO CART</button>
+        </div>
+    </div>
+    <!-- New Section for Viewing Images Bigger -->
+    <div class="large-image-section">
+        <h2>View Images</h2>
+        <div class="large-image-gallery">
+            <div class="large-image-display">
+                <img id="largeImage" src="/images/product<%= product.id %>.jpg" alt="Large Image">
+            </div>
+            <div class="thumbnail-gallery">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 1" onclick="changeImage('/images/product<%= product.id %>.jpg')">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 2" onclick="changeImage('/images/product<%= product.id %>.jpg')">
+                <img src="/images/product<%= product.id %>.jpg" alt="Thumbnail 3" onclick="changeImage('/images/product<%= product.id %>.jpg')">
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImage(src) {
+            document.getElementById('largeImage').src = src;
+        }
+    </script>
+    <%- include('partials/footer') %>
+    <script src="/js/script.js"></script>
+</body>
+</html>

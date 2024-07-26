@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "profilePicture": "/images/profile-picture.jpg",
+    "joinDate": "2021-01-01"
+  },
+  {
+    "id": 2,
+    "username": "pedro",
+    "email": "pedro@gmail.com",
+    "password": "$2a$10$/VYf5jNnfclBvDL3uz.HWuo96AbjPqQdPB3Rrpn1tgUhX9TXcFL7a",
+    "profilePicture": "/uploads/1721875613330.png",
+    "joinDate": "2024-07-25"
+  },
+  {
+    "id": 3,
+    "username": "pedrito",
+    "email": "pedroo@gmail",
+    "password": "$2a$10$.OcS6Xx6LmFMlduAEAAAsenoshiR7E5QIEUjQ/WW9zxCCS8aFpKLi",
+    "profilePicture": "/uploads/1721875804896.png",
+    "joinDate": "2024-07-25"
+  },
+  {
+    "id": 4,
+    "username": "Pedrosa",
+    "email": "pedross@gmail.com",
+    "password": "$2a$10$j6jhI/HdsHjzh3c43fdZ6OXCNgnEwTOxzogM75DT5fop115jRCczK",
+    "profilePicture": "/images/default-profile.png",
+    "joinDate": "2024-07-25"
+  },
+  {
+    "id": 5,
+    "username": "Pedrosa",
+    "email": "pedrosa@gmail.com",
+    "password": "$2a$10$qYeeyCpyTzXMMy6L.gaOJeTHg0aePPIpfUkUTakVOk5uslP3li5lq",
+    "profilePicture": "/images/default-profile.png",
+    "joinDate": "2024-07-25"
+  },
+  {
+    "id": 6,
+    "username": "afa",
+    "email": "afa@gmail.com",
+    "password": "$2a$10$z9h3OamM2U9YjolHZnxbEOYJtaFYbw4Sm7iuCjvq6prF3H.k3a4tO",
+    "profilePicture": "/uploads/1721876098825.png",
+    "joinDate": "2024-07-25"
+  },
+  {
+    "id": 7,
+    "username": "pedri",
+    "email": "pedri@gmail.com",
+    "password": "$2a$10$Wyg5iya672rlXXED1NKn0enn7IaaT3Ldl.9dGxaSM6/tMjPX66Rfi",
+    "profilePicture": "/uploads/1722023719218.jpg",
+    "joinDate": "2024-07-26"
+  }
+]
